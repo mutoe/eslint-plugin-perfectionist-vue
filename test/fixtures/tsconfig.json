@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["es2015", "es2017", "esnext"],
+    "lib": [
+      "es2015",
+      "es2017",
+      "esnext"
+    ],
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "module": "commonjs",
@@ -8,5 +12,7 @@
     "target": "es5",
     "strict": true
   },
-  "include": ["file.svelte", "file.astro", "react.tsx", "file.vue", "file.ts"]
+  "include": [
+    "file.vue"
+  ]
 }

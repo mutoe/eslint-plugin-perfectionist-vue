@@ -46,8 +46,6 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
       description: 'Enforce sorted Vue attributes.',
     },
     fixable: 'code',
-    deprecated: true,
-    replacedBy: ['vue/attributes-order'],
     schema: [
       {
         type: 'object',

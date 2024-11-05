@@ -1,4 +1,3 @@
-import type { TSESTree } from '@typescript-eslint/types'
 
 import { matches } from './matches'
 
@@ -14,12 +13,3 @@ export let isPartitionComment = (
   (typeof partitionComment === 'string' &&
     matches(comment.trim(), partitionComment, matcher)) ||
   partitionComment === true
-
-export let hasPartitionComment = (
-  partitionComment: string[] | boolean | string,
-  comments: TSESTree.Comment[],
-  matcher: 'minimatch' | 'regex',
-): boolean =>
-  comments.some(comment =>
-    isPartitionComment(partitionComment, comment.value, matcher),
-  )
